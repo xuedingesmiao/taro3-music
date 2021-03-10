@@ -1,0 +1,154 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.song-bg {
+  transform: scale(1.2);
+  transform-origin: center top;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(30px) brightness(0.5);
+  overflow: hidden;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.spin {
+  animation: spin 20s linear infinite;
+  animation-play-state: running;
+}
+.spin-pause {
+  animation-play-state: paused;
+}
+
+.song-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vw;
+  .song-cover-bg {
+    width: 70%;
+    height: 70%;
+    background: url(../../images/disc-ip6.png) no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  image {
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+  }
+}
+.like-more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .like,
+  .more {
+    width: 100px;
+    text-align: center;
+  }
+  .more {
+    font-size: 60px;
+    color: #ccc;
+  }
+}
+.play-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #c2c2c2;
+  .play {
+    width: 100px;
+    border-radius: 50%;
+    height: 110px;
+    border: 4px solid #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .pause {
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+    border: 4px solid #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.slider-container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .at-slider {
+    flex: auto;
+  }
+  .timer {
+    color: #ccc;
+    width: 12%;
+    text-align: center;
+  }
+}
+
+.playing-title {
+  font-size: 40px;
+}
+
+.playing-list-container {
+  height: 600px;
+  overflow: auto;
+  padding: 15px;
+  .playing-list-item {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-around;
+    align-items: center;
+    .playing-status {
+      padding-right: 10px;
+    }
+    .item-detail {
+      flex: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .is-playing {
+      color: #f00;
+    }
+  }
+}
+
+.info-container {
+  .artist-info,
+  .album-info,
+  .list-info {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #666;
+    .action {
+      padding-left: 15px;
+    }
+  }
+}

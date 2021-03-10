@@ -1,0 +1,68 @@
+.artist-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.artist-container {
+  padding: 25px;
+  padding-bottom: 40px;
+  margin-bottom: -15px;
+  background: rgba(0, 0, 0, 0.1);
+  .artist-name {
+    color: #fff;
+    font-size: 50px;
+  }
+  .artist {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 500px;
+    .already-followed {
+      width: 150px;
+      color: #eee;
+      padding: 10px 0;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 40px;
+      border: 1px solid #333;
+    }
+    .sub-btn {
+      font-size: 28px;
+      padding: 15px 30px;
+      background: red;
+      color: #eee;
+      border-radius: 40px;
+    }
+  }
+}
+.artist-tabs {
+  border-radius: 25px;
+  display: flex;
+  background: #fff;
+  .tab-item {
+    flex: 1;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+  }
+  .selected {
+    border-bottom: 4px solid #1f81dd;
+  }
+}
+.item-container {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  image {
+    width: 100px;
+    height: 100px;
+  }
+  .album-name {
+    padding-left: 15px;
+    flex: auto;
+  }
+}

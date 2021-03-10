@@ -1,0 +1,40 @@
+.tracks-container {
+  background: #fff;
+  border-radius: 25px;
+  /* max-height: 100vh; */
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.song-info {
+  .song-top {
+    display: flex;
+    .song-cover {
+      height: 100%;
+      image {
+        height: 100px;
+        width: 100px;
+      }
+    }
+    .song-detail {
+      padding-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .action-item {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    color: #666;
+    .action {
+      padding-left: 20px;
+      flex: auto;
+    }
+  }
+}
+.artist {
+  padding: 20px;
+  font-size: 35px;
+}

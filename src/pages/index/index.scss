@@ -1,0 +1,42 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  .list-item {
+    flex: 1;
+    padding: 1%;
+    .list-item-cover {
+      position: relative;
+      .list-item-count {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        padding: 10px;
+        .at-icon-sound {
+          margin-right: 10px;
+        }
+      }
+      image {
+        width: 100%;
+        height: 240px;
+        border-radius: 15px;
+      }
+    }
+  }
+  .list-item.span33 {
+    flex: 0 0 31.33%;
+  }
+  .list-item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    text-align: center;
+  }
+}

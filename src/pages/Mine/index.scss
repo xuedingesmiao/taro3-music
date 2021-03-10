@@ -1,0 +1,90 @@
+.user-box {
+  display: flex;
+  padding: 0 30px;
+  .user-avator {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .user-info {
+    display: flex;
+    flex: auto;
+    padding: 15px 20px;
+    font-size: 38px;
+    flex-direction: column;
+    justify-content: space-around;
+    .user-level {
+      font-size: 25px;
+      font-style: italic;
+    }
+  }
+  .user-tail {
+    display: flex;
+    align-items: center;
+  }
+  .login-btn {
+    padding-left: 20px;
+    height: 120px;
+    line-height: 120px;
+  }
+}
+.stared-music {
+  display: flex;
+  padding: 30px;
+  .star-icon {
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(255, 227, 231);
+    width: 80px;
+    height: 80px;
+  }
+  .stared-info {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .count {
+      color: #999;
+    }
+  }
+}
+
+.user-playlist {
+  display: flex;
+  padding: 30px;
+  padding-top: 0;
+  height: 60vh;
+  // background: #fff0f6;
+  flex-direction: column;
+  overflow: auto;
+  .list-title {
+    padding-bottom: 15px;
+    font-size: 35px;
+  }
+  .list-item-box {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    .list-cover {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+    }
+    .list-info {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}
+
+.user-logout {
+  margin-top: 20px;
+
+  .at-button {
+    background: #d91d06;
+    color: #fff;
+    font-size: 35px;
+  }
+}

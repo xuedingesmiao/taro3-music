@@ -1,0 +1,32 @@
+.banner-container {
+  width: 98%;
+  margin: 0 auto;
+  .banner-item {
+    .pic-container {
+      border-radius: 25px;
+      position: relative;
+      height: 100%;
+      .item-title {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+        padding: 0 20px;
+        border-radius: 18px 0 25px 0;
+      }
+
+      .red {
+        background: red;
+      }
+      .blue {
+        background: #239ff1;
+      }
+      .banner-item-pic {
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

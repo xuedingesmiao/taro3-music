@@ -1,0 +1,88 @@
+.user-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  // filter: blur(80px);
+  overflow: hidden;
+  z-index: -1;
+}
+.user-container {
+  padding-left: 40px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  .user-avatar {
+    image {
+      width: 180px;
+      height: 180px;
+      border-radius: 90px;
+    }
+  }
+  .user-name {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+  }
+  .user-follow-staus {
+    display: flex;
+    color: #ddd;
+    font-size: 28px;
+    .space-gap {
+      padding: 0 20px;
+    }
+  }
+}
+.flex-box {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.follow-btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  .already-followed {
+    width: 150px;
+    color: #eee;
+    padding: 10px 0;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid #333;
+  }
+  .follow-btn {
+    width: 150px;
+    color: #fff;
+    padding: 10px 0;
+    // height: 32px;
+    line-height: 32px;
+    background: red;
+    text-align: center;
+    border-radius: 40px;
+  }
+}
+
+.playlist-container {
+  border-radius: 25px;
+  background: #fff;
+  padding-top: 30px;
+  .list-item {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    image {
+      width: 100px;
+      height: 100px;
+    }
+    .list-name {
+      padding-left: 15px;
+      flex: auto;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.lyric-container {
+  display: flex;
+  justify-content: center;
+  .lyric-text {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ccc;
+    transition: all 1s ease-in-out 1s;
+  }
+}

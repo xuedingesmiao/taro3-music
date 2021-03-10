@@ -1,0 +1,101 @@
+@import '~taro-ui/dist/style/components/icon.scss';
+
+.list-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  // height: 300px;
+  filter: blur(80px);
+  overflow: hidden;
+  z-index: -1;
+}
+.list-info {
+  display: flex;
+  padding: 40px 0;
+  align-items: center;
+  .list-cover {
+    padding-left: 40px;
+
+    image {
+      width: 240px;
+      height: 240px;
+      border-radius: 15px;
+    }
+  }
+  .list-creator {
+    // height: 240px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .list-name {
+      color: #fff;
+    }
+    .list-description {
+      padding-top: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+      color: #eee;
+    }
+  }
+}
+.creator-container {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  .creator-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+  .creator-name {
+    padding-left: 15px;
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+.list-bar {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-around;
+  .list-bar-item {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.playlist-container {
+  background: #fff;
+  border-radius: 30px;
+}
+.top-area {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  .play-all {
+    padding-left: 10px;
+  }
+  .play-all,
+  .subscribe {
+    display: flex;
+    align-items: center;
+    .list-length {
+      color: #aaa;
+      font-size: 28px;
+    }
+    .sub-btn {
+      font-size: 28px;
+      padding: 15px 30px;
+      background: red;
+      color: #eee;
+      border-radius: 40px;
+    }
+  }
+}

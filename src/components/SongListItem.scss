@@ -1,0 +1,33 @@
+.song-container {
+  display: flex;
+  padding: 15px 15px;
+  justify-content: space-between;
+  .song-index {
+    flex: 1;
+  }
+  .song-detail {
+    flex: 8;
+    padding-left: 5px;
+    .song-name,
+    .song-ar-al {
+      width: 70vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .song-ar-al {
+      font-size: 26px;
+      color: #999;
+    }
+  }
+  .more {
+    flex: 2;
+  }
+  .song-index,
+  .more {
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
